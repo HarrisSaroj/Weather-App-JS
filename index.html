@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <h1>Weather App</h1>
+
+        <!--------------------------------------- Tab Wala Section ----------------------------------------------------->
+        <div class="tab-container">
+            <p class="tab" data-userWeather>Your Weather</p>
+            <p class="tab" data-searchWeather>Search Weather</p>
+        </div>
+
+
+        <!-- -----------------------------------Weather Container Wla Section--------------------------------------- -->
+        <div class="weather-Container">
+
+            <!------------------------------- Grant Location Container ------------------------------------------------->
+
+            <div class="sub-container grant-location-container">
+                <img src="./assets/location.png" alt="location-image" height="80" width="80" loading="lazy">
+                <p>Grant Location Access</p>
+                <p>Allow Access to get Weather Infomation</p>
+                <button class="btn" data-grantAccess>Grant Access</button>
+            </div>
+
+            <!----------------------------------------- Search Form ---------------------------------------------------->
+
+
+            <form class="form-container" data-searchForm>
+                <input placeholder="Search for City..." data-searchInput>
+                <button class="btn" type="submit">
+                    <img src="./assets/search.png" alt="searchImage" width="20" height="20" loading="lazy">
+                </button>
+            </form>
+
+            <!------------------------------------------- Loading Screen ------------------------------------------------>
+
+            <div class="sub-container loading-container">
+                <img src="./assets/loading.gif" alt="loadinggif" height="150" width="150">
+                <p>Loading</p>
+            </div>
+
+            <!-------------------------------------- Show Weather Infomation -------------------------------------------->
+
+            <div class="sub-container user-info-container">
+
+                 <!--------------------City name and Flag  --------------------------->
+                <div class="name">
+                    <p data-cityName></p>
+                    <img data-countryIcon>
+                </div>
+
+                <!----------- Dynamic hai -- Weather Description--------------->
+                <p data-weatherDesc></p>
+
+                <!--------------- Dynamic hai Weather Icon -------------------->
+                <img data-weatherIcon>
+
+                <!------------------ Dynamic hai  Temperature--------------------->
+                <p data-temp></p>
+
+                <!--------------------------------------------- 3 Cards - Parameters ---------------------------------------------->
+
+                <div class="parameter-container">
+
+                    <!----------------------- Card 1 --------------->
+                    <div class="parameter">
+                        <img src="./assets/wind.png" alt="windImage">
+                        <p>WindSpeed</p>
+                        <p data-windSpeed></p>
+                    </div>
+
+                    <!---------------------- Card 2 ---------------->
+                    <div class="parameter">
+                        <img src="./assets/humidity.png" alt="humidity">
+                        <p>Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+
+                    <!--------------------- Card 3 ------------------>
+                    <div class="parameter">
+                        <img src="./assets/cloud.png" alt="clouds">
+                        <p>Cloud</p>
+                        <p data-cloudiness></p>
+                    </div>
+
+                </div>
+
+                <!-- <div class="errorNotFound">
+                    <img src="./assets/not-found.png" alt="notFound" errorImage>
+                    <p messageNotFound></p>
+                </div> -->
+
+            </div>
+
+        </div>
+
+        <div class="errorNotFound">
+            <img src="./assets/not-found.png" alt="notFound" errorImage>
+            <p messageNotFound></p>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
