@@ -1,5 +1,5 @@
 # Weather-App-JS
- A Simple Weather Application usind HTML CSS and JS
+ A Simple Weather Application using HTML CSS and JS
  
  A weather app can be built using HTML, CSS, and JavaScript on the frontend. HTML provides the structure of the web page, while CSS adds styling to the HTML elements, and JavaScript adds interactivity to the app.
  You'll need to integrate a weather API to fetch the weather data for a specific location. The API will provide you with a JSON object containing the weather data, such as temperature, humidity, wind speed, and weather conditions.
